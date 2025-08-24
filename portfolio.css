@@ -1,0 +1,277 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: cadetblue;
+}
+
+header {
+  background: linear-gradient(135deg,   #0e5152,#1b436e, #0e5152, #1b436e);
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul h1{
+    margin-right: 300px;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  height: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+#home {
+  background-color: #f0f8ff;
+}
+
+#about {
+  background-color: #e6ffe6;
+}
+
+#projects {
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: space-evenly;
+  height: 450px;
+}
+span{
+  margin-top: 30px;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+
+#contact {
+  background: linear-gradient(135deg, #0e4a52, #1b436e);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#contact-list h1{
+    margin-bottom: 10px;
+    font-weight: bold
+}
+
+
+/* From Uiverse.io by EddyBel */ 
+.input__container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.664);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 22px;
+  max-width: 300px;
+  transition: transform 400ms;
+  transform-style: preserve-3d;
+  transform: rotateX(15deg) rotateY(-0deg);
+  perspective: 500px;
+}
+
+.shadow__input {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(30px);
+  border-radius: 20px;
+  background-color: #999cff;
+  background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: transform 400ms, background 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.input__button__shadow:hover {
+  background: rgba(255, 255, 255, 0.411);
+}
+
+.input__search {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  position: relative;
+}
+
+
+
+
+
+
+/* 🌟 Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  text-align: center;
+  background: linear-gradient(135deg, #0e4a52, #1b436e);
+  color: white;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 700px;
+  animation: slideUp 1.5s ease-in-out;
+
+}
+
+/* Highlighted Name */
+.highlight {
+  color: #00e6ff;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #c5c5c5;
+}
+
+/* Typing Effect */
+#typing-text {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #ffcc00;
+  width: 2px;
+  animation: blink 0.8s infinite;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.primary {
+  background-color: #00e6ff;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background-color: #00bcd4;
+  transform: scale(1.05);
+}
+
+.btn.secondary {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes blink {
+  50% { background-color: transparent; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
